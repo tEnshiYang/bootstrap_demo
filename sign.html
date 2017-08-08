@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<title>news</title>
+</head>
+<style type="text/css">
+	*{
+		font-family: 微软雅黑;
+	}
+
+	.navbar-brand{
+		background-image: url(tu.png);
+		width:50px;
+		background-size: 80%;
+		background-repeat: no-repeat;
+
+	}
+
+	.side-bar .list-group-item{
+		border:0;
+		border-radius: 3px;
+		margin-bottom: 5px;
+	}
+
+
+	.side-bar .list-group-item.active{
+	
+	}
+
+	img{
+		display:block;
+		width:100%;
+		border-radius: 3px;
+	}
+
+	.news-list-item{
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-bottom:1px solid #eee;
+	}
+
+	.news-list-item:first-child{
+		padding-top: 0;
+	
+	}
+
+
+	.news-list-item .title{
+		display: block;
+		font-size:18px;
+		font-weight: bold;
+		margin-bottom: 8px;
+		line-height: 1.5;
+		color:#444;
+	}
+
+	.news-list-item .info{
+		color: #999;
+	}
+
+	.avater{
+		display: inline;
+	}
+
+	.avater img{
+		display: inline;
+		width: 15px;
+		height: 15px;
+		margin-right: 5px;
+	}
+
+	a:hover{
+		text-decoration: none;
+	}
+	
+	.news-list-item .title:hover{
+		color: blue;
+	}
+
+	.side-bar-card{
+		background-color: #eee;
+		margin-top: 15px;
+		padding: 10px 0;
+	}
+
+	.side-bar-card.flag{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.side-bar-card .text-lg{
+		font-size: 140%;
+	}
+	.card-body .list .item .desc{
+		color: #999;
+	}
+	.side-bar-card .card-title,.side-bar-card .card-body .list .item{
+		padding:10px 15px;
+	}
+	.side-bar-card .card-title{
+		padding-bottom: 0;
+		padding-top: 0;
+		font-weight: bold;
+
+	}
+	.side-bar-card .card-body .list .item:hover{
+		background-color: rgba(0,0,0,.05);
+	}
+	
+	.news-title{
+		font-size: 350%;
+	}
+	
+	.news-content{
+		padding: 10px;
+		font-size: 19px;
+	}
+	.no-padding-h{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.footer{
+		margin-top: 20px;
+		padding: 20px 0;
+		text-align: center;
+		color: #999;
+	}
+	.container-small{
+		max-width: 500px;
+	}
+
+	.btn-primary{
+		
+	}
+
+	.btn-default{
+
+	}
+	#toggle-checkbox:checked ~ div{
+		display: block ! important;
+	}
+	#toggle-label{
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+		top: 12px;
+		font-size: 16px;
+		font-weight: normal;
+		color: #666;
+	}
+
+
+</style>
+<body>
+
+<div class="navbar navbar-default">
+	<div class="container">
+		<div class="navbar-header">
+			<a href="start.html" class="navbar-brand" alt="logo"></a>
+		</div>
+		<label id="toggle-label" for="toggle-checkbox">menu</label>
+		<input type="checkbox" class="hidden" id="toggle-checkbox">
+		<div class="container hidden-xs">
+			<ul class="nav navbar-nav">
+			<li><a href="index.html">首页</a></li>
+			<li><a href="#">国内</a></li>
+			<li><a href="#">国际</a></li>
+			<li><a href="#">社会</a></li>
+
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="login.html">登录</a></li>
+			<li><a href="sign.html">注册</a></li>
+		</ul>
+		</div>
+		
+	</div>
+</div>
+<div class="container container-small">
+<h1>注册
+	
+</h1>
+	<form action="">
+		<div class="form-group">
+			<label>用户名</label>
+			<input type="text" class="form-control">
+		</div>
+		<div class="form-group">
+			<label>验证码</label>
+			<div class="input-group">
+				<input type="text" class="form-control">
+				<div class="input-group-btn">
+					<div class="btn btn-default">获取验证码</div>
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<label>密码</label>
+			<input type="password" class="form-control">
+		</div>
+		<div class="form-group">
+			<button class="btn btn-primary btn-block" type="submit">注册</button>
+		</div>
+	</form>
+
+</div>
+
+</div>
+<div class="footer">
+	页脚 页脚 页脚 页脚 页脚 页脚
+</div>
+</body>
+</html>
